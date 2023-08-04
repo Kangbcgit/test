@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Props from './Component/exam/Props';
+import TernaryOperator from './Component/exam/TernaryOperator';
+import Input from './Component/exam/Input';
+import SignUp from './Component/exam/SignUp';
+import ProductList from './Component/exam/ProductList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/*  props study 
+      <Props color='rgb(120, 0, 255)'/>
+      <Props name='강븅찬'/> */}
+      {/* 
+        삼항연산자 / useState
+      <TernaryOperator color={'rgb(120, 0, 255)'} name='안녕하세요'/> */}
+      {/* 
+        input value 연동
+      <Input/> */}
+      {/* 
+        회원가입
+      <SignUp/> */}
+      <ProductList/>
+    </>
   );
 }
 
